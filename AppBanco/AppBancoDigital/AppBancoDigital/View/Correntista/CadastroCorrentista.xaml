@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:Class="AppBancoDigital.View.CadastroCliente">
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,2">
+            <GradientStop Color="#ffffff"
+                          Offset="0.1" />
+            <GradientStop Color="#01c5ff"
+                          Offset="0.7" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="CADASTRE-SE"
+                   TextColor="#414141"
+                   FontSize="23" FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" Margin="0,10,0,0"
+                   Style="{StaticResource bold}"/>
+
+            <Label Text="CPF" 
+                           TextColor="#414141"
+                           FontSize="16" FontAttributes="Bold"
+                           Margin="5,5,0,0"
+                           Style="{StaticResource bold}"/>
+            <Entry x:Name="cpf_inserido"
+                           Placeholder="Digite seu CPF" PlaceholderColor="#414141"
+                           Margin="3,0,5,0" TextColor="#414141"      
+                           Style="{StaticResource regular}"
+                           MaxLength="14" Keyboard="Numeric"
+                           >
+                <Entry.Behaviors>
+                    <xct:MaskedBehavior 
+                            Mask="AAA.AAA.AAA-AA" 
+                            UnMaskedCharacter="A"
+                        />
+                </Entry.Behaviors>
+            </Entry>
+
+            <Label Text="Nome Completo" 
+                           TextColor="#414141"
+                           FontSize="16" FontAttributes="Bold"
+                           Margin="5,5,0,0"
+                           Style="{StaticResource bold}"/>
+            <Entry x:Name="nome_inserido"
+                           Placeholder="Digite seu Nome Completo" PlaceholderColor="#414141"
+                           Margin="3,0,5,0" TextColor="#414141"
+                           Style="{StaticResource regular}"/>
+
+            <Label Text="Data de Nascimento" 
+                           TextColor="#414141"
+                           FontSize="15" FontAttributes="Bold"
+                           Margin="5,5,0,0"
+                           Style="{StaticResource bold}"/>
+
+            <DatePicker x:Name="dtpck_dataNasc"
+                                            Format="dd/MM/yyyy"
+                                            FontSize="18" 
+                                            BackgroundColor="Transparent" 
+                                            Margin="0,0,280,0"
+                                            FontAttributes="Bold"
+                                            TextColor="#414141"
+                                            
+                                            Style="{StaticResource regular}"
+                                            />
+
+            <Label Text="Senha de Acesso" 
+                           TextColor="#414141"
+                           FontSize="16" FontAttributes="Bold"
+                           Margin="5,5,0,0"
+                           Style="{StaticResource bold}"/>
+
+            <Grid ColumnDefinitions="345,*">
+                <Entry x:Name="senha_inserido"
+                       Grid.Column="0"
+                       Placeholder="Digite a Senha" PlaceholderColor="#414141"
+                       Margin="3,0,0,0" TextColor="#414141"
+                       IsPassword="True"
+                       Style="{StaticResource regular}"
+                           />
+            </Grid>
+
+
+            <Label Text="Confirmar Senha" 
+                           TextColor="#414141"
+                           FontSize="16" FontAttributes="Bold"
+                           Margin="5,5,0,0"
+                           Style="{StaticResource bold}"/>
+
+            <Grid ColumnDefinitions="345,*">
+                <Entry x:Name="senhaConfirm_inserido"
+                       Grid.Column="0"
+                           Placeholder="Digite a Senha Novamente" PlaceholderColor="#414141"
+                           Margin="3,0,5,0" TextColor="#414141"
+                           IsPassword="True" Style="{StaticResource regular}"
+                />
+            
+            </Grid>
+
+            <StackLayout VerticalOptions="EndAndExpand" Margin="0,0,0,07">
+                <Button x:Name="btn_cadastrar"
+                            Text="REALIZAR CADASTRO"
+                            Clicked="btn_cadastrar_Clicked"
+                            Margin="7,0,7,3"
+                            FontAttributes="Bold"
+                            FontSize="17"
+                            CornerRadius="10"
+                            BackgroundColor="#ffff"
+                            TextColor="#414141"
+                            VerticalOptions="End"
+                            Style="{StaticResource bold}"/>
+
+                <Button x:Name="btn_voltar"
+                            Text="RETORNAR AO LOGIN"
+                            Clicked="btn_voltar_Clicked"
+                            CornerRadius="10" Margin="7,0,7,0"
+                            FontAttributes="Bold"
+                            FontSize="17"
+                            BackgroundColor="#414141"
+                            TextColor="white"
+                            BorderWidth="2"
+                            VerticalOptions="End"
+                            Style="{StaticResource bold}"/>
+            </StackLayout>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
