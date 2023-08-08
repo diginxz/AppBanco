@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              x:Class="AppBancoDigital.View.Home">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout BackgroundColor="#00A6F0">
+            <Frame HeightRequest="50"
+                   BackgroundColor="#00D5D9"
+                   BorderColor="Transparent">
+                <StackLayout Orientation="Horizontal">
+
+                    <Label x:Name="nome_user" 
+                           TextColor="White" FontSize="22"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+            </Frame>
+            
+            <ScrollView>
+                <StackLayout >
+                    <Label Text="Conta" FontSize="25"
+                       TextColor="White" FontAttributes="Bold"
+                   Margin="18,5,0,0"/>
+                    <Label Text="R$ 10,00" FontSize="25"
+                       TextColor="White" FontAttributes="Bold"
+                   Margin="18,0,0,10"/>
+                    <Button x:Name="ContaPoupanca" FontSize="20" FontAttributes="Bold"
+                        HeightRequest="100" Margin="16,0,16,10" CornerRadius="15"
+                        BackgroundColor="white" TextColor="#00A6F0"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
