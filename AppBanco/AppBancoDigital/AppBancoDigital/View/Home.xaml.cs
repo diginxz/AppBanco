@@ -3,22 +3,79 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppBancoDigital.Model;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Home : ContentPage
     {
-
         public Home()
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
-            nome_user = "Olá, " + App.DadosCorrentista.Nome;
+            vendo.Source = ImageSource.FromResource("AppBancoDigital.Assets.eyeOn.png");
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Assets.JotaBank_Logo.png");
 
-            ContaPoupanca = "Iniciar\nConta\nPoupança";
+            string nomeCompleto;
+            if (App.DadosCorrentista != null)
+            {
+                nomeCompleto = App.DadosCorrentista.Nome;
+            }
+            else
+            {
+                nomeCompleto = "teste";
+            }
+            string[] PrimeiroNome = nomeCompleto.Split(' ');
+            if (App.FotoCorrentista != null)
+            {
+                userPhoto.Source = App.FotoCorrentista;
+            }
+            else
+            {
+                userPhoto.Source = ImageSource.FromResource("AppBancoDigital.Assets.userPadrao.png");
+            }
+
+            // ICONS BOTOES
+            pix.Source = ImageSource.FromResource("AppBancoDigital.Assets.pix-Icon.png");
+            pagarComQRCode.Source = ImageSource.FromResource("AppBancoDigital.Assets.qr-code.png");
+            cofrinho.Source = ImageSource.FromResource("AppBancoDigital.Assets.cofrinho.png");
+
+            saldo.Text = "━━━━━━";
+            nome_user.Text = "Olá, " + PrimeiroNome[0];
+            ContaPoupanca.Text = "Iniciar\nConta\nPoupança";
+            txt.Text = "Saldo em conta\n";
+        }
+        bool Vendo = false;
+
+        private void vendo_Clicked(object sender, EventArgs e)
+        {
+            //FUNÇÃO DE MOSTRAR SENHA -- OK
+            try
+            {
+                if (Vendo == false)
+                {
+                    vendo.Source = ImageSource.FromResource("AppBancoDigital.Assets.eyeOff.png");
+                    Vendo = true;
+                    saldo.Text = "R$ 10,00";
+                }
+                else
+                {
+                    vendo.Source = ImageSource.FromResource("AppBancoDigital.Assets.eyeOn.png");
+                    Vendo = false;
+                    saldo.Text = "━━━━━━";
+                }
+                //VendoNaoVendo(vendo);
+            }
+            catch (Exception ex)
+            {
+                DisplayAlert("Erro!", ex.Message, "OK");
+            }
+
         }
 
         private void CorrentistaImage_Clicked(object sender, EventArgs e)
@@ -29,6 +86,11 @@ namespace AppBancoDigital.View
         private void Depositar_Clicked(object sender, EventArgs e)
         {
 
-        } 
+        }
+
+        private void pix_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.Funcoes.Pix.AreaPix());
+        }
     }
 }

@@ -16,3 +16,16 @@ C:\Users\Usuario\Source\Repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\
 C:\Users\Usuario\Source\Repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\refint\AppBancoDigital.dll
 C:\Users\Usuario\Source\Repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.pdb
 C:\Users\Usuario\Source\Repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\ref\AppBancoDigital.dll
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.csproj.AssemblyReference.cache
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\View\Acesso\Login.xaml.g.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\View\Correntista\CadastroCorrentista.xaml.g.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\View\Home.xaml.g.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.AssemblyInfoInputs.cache
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.AssemblyInfo.cs
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.csproj.CoreCompileInputs.cache
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.dll
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\refint\AppBancoDigital.dll
+C:\Users\rodri\source\repos\AppBanco\AppBanco\AppBancoDigital\AppBancoDigital\obj\Debug\netstandard2.0\AppBancoDigital.pdb
