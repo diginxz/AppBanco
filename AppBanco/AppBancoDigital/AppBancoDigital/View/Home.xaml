@@ -31,7 +31,6 @@
                                     />
 
 
-
                     <Label x:Name="nome_user" 
                            TextColor="White" FontSize="20.5"
                            Margin="12,0,0,0"

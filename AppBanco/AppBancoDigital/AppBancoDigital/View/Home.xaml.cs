@@ -19,8 +19,8 @@ namespace AppBancoDigital.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             vendo.Source = ImageSource.FromResource("AppBancoDigital.Assets.eyeOn.png");
-            logo.Source = ImageSource.FromResource("AppBancoDigital.Assets.JotaBank_Logo.png");
-
+            logo.Source = ImageSource.FromResource("AppBancoDigital.Assets.logo.png");
+            
             string nomeCompleto;
             if (App.DadosCorrentista != null)
             {
