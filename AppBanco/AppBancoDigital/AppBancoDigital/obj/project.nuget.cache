@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jh7TC7ym1x9gs5VCJVL+bZQy7X7pHixDsJdBIiXPefXxp5T8gj/Rm5dnlRZ65ZMiy8RE9IYgv/MSGVYIK97Xbw==",
+  "dgSpecHash": "dyS6jPJ10/aeru3ollWALx/ziLafpLJv+ZWXjuk570bKIWvKk7RG3PVXWwB8di2EQRuNsugpfbsfrD6Y95SIlA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\AppBanco\\AppBanco\\AppBancoDigital\\AppBancoDigital\\AppBancoDigital.csproj",
+  "projectFilePath": "C:\\Users\\Usuario\\Source\\Repos\\AppBanco\\AppBanco\\AppBancoDigital\\AppBancoDigital\\AppBancoDigital.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
@@ -13,8 +13,8 @@
     "C:\\Users\\Usuario\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.3\\system.runtime.compilerservices.unsafe.4.5.3.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.communitytoolkit\\2.0.6\\xamarin.communitytoolkit.2.0.6.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
-    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\5.0.0.2578\\xamarin.forms.5.0.0.2578.nupkg.sha512"
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.essentials\\1.8.0\\xamarin.essentials.1.8.0.nupkg.sha512",
+    "C:\\Users\\Usuario\\.nuget\\packages\\xamarin.forms\\5.0.0.2612\\xamarin.forms.5.0.0.2612.nupkg.sha512"
   ],
   "logs": []
 }
